@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login&Signup</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-box">
+                <h1 class="title">Sign Up</h1>
+                <div class="underline"></div>
+                <div class="input-field">
+                    <div class="input-box hide">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="input-box">
+                        <i class="fa-solid fa-at"></i>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-box">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" placeholder="Password" id="password" required >
+                    </div>
+                    <div class="checkBox">
+                        <input type="checkbox" name="show" id="check" onclick="checkPass()">
+                        <label for="check">Show Password</label>
+                    </div>
+                </div>
+                <p><span class="para"> password suggestions </span><a href="#" onclick="showpass()"> Click here</a></p>
+                <div class="btns">
+                    <button class="signupbtn">Sign Up</button>
+                    <button class="signinbtn disable">Sign In</button>
+                </div>
+            </div>
+
+            <div class="somePasswards">
+                <ol>
+                    <h1 style="margin-bottom: 10px; text-align: center; color: red; font-size: 17px;">Password Suggestions</h1>
+                    <li>XYjshjuwnnbcbcjc</li>
+                    <li>nsbXZjnjbwC</li>
+                    <li>XVGGRSSSNJHlddmm</li>
+                    <li>DfhshgsjDDSas</li>
+                    <li>XYjshjuwnnbcbc</li>
+                </ol>
+                <div class="closeBtn">Close</div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
